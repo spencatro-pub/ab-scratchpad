@@ -39,7 +39,7 @@ def main():
         'H': qrcode.constants.ERROR_CORRECT_H,
     }
     
-    # this one too
+    # this one too!
     qr = qrcode.QRCode(error_correction=ecc_map[args.ecc])
     qr.add_data(args.data)
     qr.make()
