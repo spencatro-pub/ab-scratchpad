@@ -46,6 +46,7 @@ def main():
     
     img = qr.make_image(fill_color=args.fill_color, back_color=args.back_color)
     img.save(args.output)
+    print(f'QR code version: {qr.version}')
     print(f'QR code generated with ECC level {args.ecc} and saved to {args.output}')
 
 if __name__ == '__main__':
